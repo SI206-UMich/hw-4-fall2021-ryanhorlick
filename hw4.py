@@ -223,11 +223,9 @@ class TestAllMethods(unittest.TestCase):
         self.assertEqual(self.f1.validate_order(self.c2, self.s3, "Burger", 30), None)
 
     # Test if a customer can add money to their wallet
-    def test_reload_money(self):
-        self.f2.reload_money(50)
-        self.assertEqual(self.f2.wallet, 200)
-    
-        #CASE Reload Money isn't working
+        def test_reload_money(self):
+            self.f2.reload_money(50)
+            self.assertEqual(self.f2.wallet, 200)
 
 
 ### Write main function
