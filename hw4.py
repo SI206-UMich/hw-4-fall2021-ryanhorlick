@@ -116,6 +116,12 @@ class Stall:
         print("Hello, we are " + self.name + ". This is the current menu " + self.inventory.keys() + ".")
         print("We charge $" + self.cost + " per item. We have $" + self.earnings + " in total.")
 
+    # def extra_credit(self):
+    #     for name in list.randrange(0, 10):
+    #         if name == 10:
+    #                 pass
+    # unsure, needs more practice / thought
+
             
 class TestAllMethods(unittest.TestCase):
     
@@ -223,9 +229,9 @@ class TestAllMethods(unittest.TestCase):
         self.assertEqual(self.f1.validate_order(self.c2, self.s3, "Burger", 30), None)
 
     # Test if a customer can add money to their wallet
-        def test_reload_money(self):
-            self.f2.reload_money(50)
-            self.assertEqual(self.f2.wallet, 200)
+    def test_reload_money(self):
+        self.f2.reload_money(50)
+        self.assertEqual(self.f2.wallet, 200)
 
 
 ### Write main function
